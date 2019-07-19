@@ -1,0 +1,176 @@
+[
+	{
+		"ABSENCE_TYPE_ID": "300000152842090",
+		"NAME": "Annual Leave",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Annual Leave"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001275174",
+		"NAME": "Cuti Bersama",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Cuti Bersama (Mass Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001275008",
+		"NAME": "Cuti Besar",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Cuti Besar"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001275142",
+		"NAME": "Cuti Besar Lanjutan",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Cuti Besar Lanjutan"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270053",
+		"NAME": "Cuti Di luar Tanggungan Perusahaan",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Cuti Di luar Tanggungan Perusahaan\n(Unpaid Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270086",
+		"NAME": "Cuti Ibadah Haji Pertama",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Cuti Ibadah Haji Pertama \n(Hajj Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270119",
+		"NAME": "Cuti Perjalanan Dinas Rohani",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Cuti Perjalanan Dinas Rohani (Religion Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270119",
+		"NAME": "Cuti Perjalanan Dinas Rohani",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Cuti Perjalanan Dinas Rohani (Religion Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270155",
+		"NAME": "Cuti Setengah Hari",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Cuti Setengah Hari (Half Day)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000152842127",
+		"NAME": "Cuti Tahunan",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": ""
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001275075",
+		"NAME": "Cuti Tahunan Contract",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Cuti Tahunan Contract (Annual Leave Contract Employee)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001275205",
+		"NAME": "Cuti Tahunan Permanent",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Cuti Tahunan Permanent (Annual Leave Permanent Employee)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000152842090",
+		"NAME": "Cuti Tahunan Profesional",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Annual Leave"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000152842127",
+		"NAME": "Front Loaded Leave",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": ""
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270187",
+		"NAME": "Ijin Bebas Tugas",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin Bebas Tugas (Free of Work Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270219",
+		"NAME": "Ijin Istri Karyawan Melahirkan",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin Istri Karyawan Melahirkan (Paternity Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270259",
+		"NAME": "Ijin Karyawati Keguguran",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin Karyawati Keguguran\n(Misscarriage Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270296",
+		"NAME": "Ijin Karyawati Melahirkan",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin Karyawati Melahirkan \n(Maternity Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001275286",
+		"NAME": "Ijin Keluarga Meninggal",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin Keluarga Meninggal\n(Immediate Family Member Death)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270336",
+		"NAME": "Ijin Kerabat Serumah Meninggal",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin Kerabat Serumah Meninggal (Relative Death)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270369",
+		"NAME": "Ijin Khitanan atau Baptis Anak",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin Khitanan atau Baptis Anak \n(Cirumcition Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270403",
+		"NAME": "Ijin Pernikahan Anak Karyawan",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin Pernikahan Anak Karyawan\n(Marriage of Employee's Child)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270436",
+		"NAME": "Ijin Pernikahan Karyawan",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin Pernikahan Karyawan \n(Employee's Marriage)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001275110",
+		"NAME": "Ijin Trainee",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin Trainee \n(Annual Leave for Trainee)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270469",
+		"NAME": "Ijin karena Haid",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin karena Haid \n(Women's Period Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270502",
+		"NAME": "Ijin karena Keperluan Pribadi",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin karena Keperluan Pribadi \n(Personal Matter Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270535",
+		"NAME": "Ijin karena Sakit",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Ijin karena Sakit \n(Sick Leave)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270572",
+		"NAME": "Istri Karyawan Keguguran",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Istri Karyawan Keguguran \n(Employee's Spouse Miscarriage)"
+	},
+	{
+		"ABSENCE_TYPE_ID": "300000001270605",
+		"NAME": "Sakit Berkepanjangan",
+		"ENTERPRISE_ID": "1",
+		"DESCRIPTION": "Sakit Berkepanjangan \n(Long Sick Leave)"
+	}
+]
