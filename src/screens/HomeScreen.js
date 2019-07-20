@@ -540,7 +540,7 @@ const styles = StyleSheet.create({
     },
     boxStyle: {
       flex: 1,
-      height: 75,
+      height: 80,
       elevation: 2,
       borderRadius: 8,
       paddingVertical: 15,

@@ -22,12 +22,10 @@ export class ListItem extends Component {
         style={styles.listItemContainer}
         onPress={this.goToStatusPage}
       >
-        <Icon style={[styles.badgeStyle, iconStyle]} name={iconName} />
         <View style={styles.listInformationContainer}>
           <Text style={styles.titleStyle}>{titleText}</Text>
           <Text style={styles.createdAtStyle}>{subtitleText}</Text>
         </View>
-        <Icon style={styles.iconStyle} name="ios-arrow-forward" />
       </TouchableOpacity>
     );
   }

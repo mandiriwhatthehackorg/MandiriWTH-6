@@ -10,7 +10,7 @@ import {
 import {
   HomeScreen, ProfileScreen, PeopleListScreen, AnimatableScreen,
   APITestScreen, TableScreen, LoginScreen, OnBoardingScreen,
-  SwiperScreen
+  SwiperScreen, ArticleListScreen, ArticleScreen, OfferingScreen
 } from './screens';
 
 const HomeStack = createStackNavigator({
@@ -20,7 +20,10 @@ const HomeStack = createStackNavigator({
   APITest: APITestScreen,
   TableScreen,
   Login: LoginScreen,
-  SwiperScreen
+  SwiperScreen,
+  ArticleScreen,
+  ArticleListScreen,
+  OfferingScreen
 }, {
   headerMode: 'none',
     navigationOptions: {
@@ -31,9 +34,9 @@ const HomeStack = createStackNavigator({
 const TabNavigator = createBottomTabNavigator(
   {
     Notifikasi: ProfileScreen,
-    Penawaran: ProfileScreen,
+    Penawaran: OfferingScreen,
     Home: HomeStack,
-    Artikel: ProfileScreen,
+    Artikel: ArticleListScreen,
     Pengaturan: ProfileScreen,
   },
   {
