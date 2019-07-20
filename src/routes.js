@@ -7,13 +7,16 @@ import {
   createBottomTabNavigator, createAppContainer, createStackNavigator
 } from 'react-navigation';
 import {
-  HomeScreen, ProfileScreen, PeopleListScreen, AnimatableScreen
+  HomeScreen, ProfileScreen, PeopleListScreen, AnimatableScreen,
+  APITestScreen, TableScreen
 } from './screens';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
   PeopleList: PeopleListScreen,
-  Animatable: AnimatableScreen
+  Animatable: AnimatableScreen,
+  APITest: APITestScreen,
+  TableScreen: TableScreen
 }, {
   headerMode: 'none',
     navigationOptions: {

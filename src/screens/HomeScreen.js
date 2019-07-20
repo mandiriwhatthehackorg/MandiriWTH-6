@@ -61,18 +61,18 @@ export class HomeScreen extends Component {
                 <GridButton
                   icon={'face'}
                   iconColor={'#142082'}
-                  text='Feature 1'
+                  text='API Test'
                   iconType={'MaterialIcons'}
-                  onPress={this.goToList}
+                  onPress={() => { this.props.navigation.navigate('APITest')}}
                 />
               </RowStyled>
               <RowStyled>
                 <GridButton
                   icon={'gavel'}
                   iconColor={'#142082'}
-                  text='Feature 2'
+                  text='Table'
                   iconType={'MaterialIcons'}
-                  onPress={this.goToList}
+                  onPress={() => { this.props.navigation.navigate('TableScreen')}}
                 />
                 <GridButton
                   icon={'car'}
