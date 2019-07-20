@@ -9,7 +9,8 @@ import {
 } from 'react-navigation';
 import {
   HomeScreen, ProfileScreen, PeopleListScreen, AnimatableScreen,
-  APITestScreen, TableScreen, LoginScreen, OnBoardingScreen
+  APITestScreen, TableScreen, LoginScreen, OnBoardingScreen,
+  SwiperScreen
 } from './screens';
 
 const HomeStack = createStackNavigator({
@@ -19,6 +20,7 @@ const HomeStack = createStackNavigator({
   APITest: APITestScreen,
   TableScreen,
   Login: LoginScreen,
+  SwiperScreen
 }, {
   headerMode: 'none',
     navigationOptions: {

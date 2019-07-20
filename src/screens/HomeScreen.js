@@ -77,9 +77,9 @@ export class HomeScreen extends Component {
                 <GridButton
                   icon={'car'}
                   iconColor={'#142082'}
-                  text='Feature 3'
+                  text='Swiper'
                   iconType={'FontAwesome5'}
-                  onPress={this.goToList}
+                  onPress={() => { this.props.navigation.navigate('SwiperScreen')}}
                 />
                 <GridButton
                   icon={'broom'}

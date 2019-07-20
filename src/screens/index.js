@@ -6,3 +6,4 @@ export * from './APITestScreen';
 export * from './TableScreen';
 export * from './LoginScreen';
 export * from './OnBoardingScreen';
+export * from './SwiperScreen';

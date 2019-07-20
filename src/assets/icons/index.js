@@ -15,3 +15,4 @@ export const FAQ_ICON = require('./008-search.png');
 export const SURAT_KETERANGAN_ICON = require('./006-list.png');
 export const CLOCK_IN_ICON = require('./clock.png');
 export const LOGIN = require('./login.png');
+export const LOGIN_FORM = require('./login_form.png');

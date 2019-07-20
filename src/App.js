@@ -4,8 +4,6 @@ import AsyncStorage from '@react-native-community/async-storage';
 import { Spinner } from 'native-base';
 import { AppContainer, LoginContainer, OnBoardingContainer } from './routes';
 
-
-
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -60,11 +58,6 @@ export default class App extends Component {
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
           <Spinner color='#2F80ED' />
         </View>
-      );
-    }
-    if (this.state.onboarding) {
-      return (
-        <OnBoardingContainer />
       );
     }
     if (this.state.login === false) {

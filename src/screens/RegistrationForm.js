@@ -3,14 +3,9 @@ import { StyleSheet, View, TouchableOpacity, Text, ImageBackground, Alert, Image
 import { Button } from 'react-native-paper';
 import AsyncStorage from '@react-native-community/async-storage';
 import { Container, Header } from 'native-base';
-import Swiper from 'react-native-swiper';
 import { LOGIN } from '../assets/icons/';
 
-export class LoginScreen extends Component {
-  componentDidMount() {
-    this.storeDataOnBoarding();
-  }
-
+export class LoginFormScreen extends Component {
   storeData = async () => {
     try {
       await AsyncStorage.setItem('@login', true);
@@ -44,30 +39,13 @@ export class LoginScreen extends Component {
           style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'white' }}
         >
           <StatusBar backgroundColor="white" barStyle="dark-content" />
-          <View style={{ height: 250, alignSelf: 'center', justifyContent: 'center' }}>
-            <Swiper
-              height={250}
-              width={500}
-              showsPagination
-              autoplay
-            >
-              <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                <Image source={LOGIN} style={{ width: 100, height: 100, marginVertical: 8 }} />
-                <Text style={[styles.textStyleDesc, { fontSize: 25 }]}> Lorem Ipsum </Text>
-                <Text style={[styles.textStyleDesc, { fontSize: 14 }]}> Lorem Ipsum </Text>
-              </View>
-              <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                <Image source={LOGIN} style={{ width: 100, height: 100, marginVertical: 8 }} />
-                <Text style={[styles.textStyleDesc, { fontSize: 25 }]}> Lorem Ipsum </Text>
-                <Text style={[styles.textStyleDesc, { fontSize: 14 }]}> Lorem Ipsum </Text>
-              </View>
-            </Swiper>
-          </View>
-          <Button mode="contained" onPress={() => { console.log('Register'); }} style={styles.buttonStyle}>
-            <Text style={styles.textStyle}>Register</Text>
+          <Image source={LOGIN} style={{ width: 100, height: 100, marginVertical: 8 }} />
+          <Text style={styles.textStyleDesc}> Lorem Ipsum </Text>
+          <Button mode="contained" onPress={this.goLogin} style={styles.buttonStyle}>
+            <Text style={styles.textStyle}>Login</Text>
           </Button>
-          <Button mode="contained" onPress={this.goLogin} style={[styles.buttonStyle, styles.registerButtonStyle]}>
-            <Text style={[styles.textStyle, { color: '#4F4F4F' }]}>Login</Text>
+          <Button mode="contained" onPress={() => { console.log('Register') }} style={[styles.buttonStyle, styles.registerButtonStyle]}>
+            <Text style={[styles.textStyle, { color: '#4F4F4F' }]}>Register</Text>
           </Button>
         </View>
     );
