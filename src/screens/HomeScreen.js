@@ -234,8 +234,8 @@ export class HomeScreen extends Component {
                     <Text style={{ fontFamily: 'Lato-Bold', color: '#4F4F4F', fontSize: 30, alignSelf: 'center', }}>
                       110 %
                     </Text>
-                    <Text style={{ fontFamily: 'Lato-Bold', color: '#828282', fontSize: 12, alignSelf: 'center', marginTop: 8 }}>
-                      Sisa 0 hari ke depan untuk 2 bulan
+                    <Text style={{ fontFamily: 'Lato-Bold', color: '#828282', fontSize: 12, alignSelf: 'center', marginTop: 8, marginHorizontal: 5, textAlign: 'center' }}>
+                      Sisa 0 rupiah untuk 2 hari ke depan
                     </Text>
                   </View>
                 )
