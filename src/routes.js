@@ -4,11 +4,12 @@ import React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Icon } from 'native-base';
 import {
-  createBottomTabNavigator, createAppContainer, createStackNavigator
+  createBottomTabNavigator, createAppContainer, createStackNavigator,
+  createSwitchNavigator
 } from 'react-navigation';
 import {
   HomeScreen, ProfileScreen, PeopleListScreen, AnimatableScreen,
-  APITestScreen, TableScreen
+  APITestScreen, TableScreen, LoginScreen, OnBoardingScreen
 } from './screens';
 
 const HomeStack = createStackNavigator({
@@ -16,7 +17,8 @@ const HomeStack = createStackNavigator({
   PeopleList: PeopleListScreen,
   Animatable: AnimatableScreen,
   APITest: APITestScreen,
-  TableScreen: TableScreen
+  TableScreen,
+  Login: LoginScreen,
 }, {
   headerMode: 'none',
     navigationOptions: {
@@ -55,4 +57,39 @@ const TabNavigator = createBottomTabNavigator(
   }
 );
 
+const MainStack = createStackNavigator({
+  Tab: TabNavigator
+}, {
+  headerMode: 'none',
+    navigationOptions: {
+      initialRouteName: 'Login',
+      headerVisible: false,
+    }
+});
+
+const LoginStack = createSwitchNavigator({
+  Login: LoginScreen,
+  Main: MainStack
+}, {
+  headerMode: 'none',
+    navigationOptions: {
+      initialRouteName: 'Login',
+      headerVisible: false,
+    }
+});
+
+const OnBoardingStack = createSwitchNavigator({
+  OnBoarding: OnBoardingScreen,
+  Login: LoginScreen,
+  Main: MainStack
+}, {
+  headerMode: 'none',
+    navigationOptions: {
+      initialRouteName: 'OnBoarding',
+      headerVisible: false,
+    }
+});
+
 export const AppContainer = createAppContainer(TabNavigator);
+export const LoginContainer = createAppContainer(LoginStack);
+export const OnBoardingContainer = createAppContainer(OnBoardingStack);
