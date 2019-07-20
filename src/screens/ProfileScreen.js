@@ -27,7 +27,11 @@ export class ProfileScreen extends Component {
   render() {
     return (
       <Container>
-        <Header transparent>
+        <Header
+          transparent
+          iosBarStyle="dark-content"
+          androidStatusBarColor="white"
+        >
           <Left />
           <Body>
             <Title>Header</Title>

@@ -30,8 +30,11 @@ const HomeStack = createStackNavigator({
 
 const TabNavigator = createBottomTabNavigator(
   {
+    Notifikasi: ProfileScreen,
+    Penawaran: ProfileScreen,
     Home: HomeStack,
-    Profile: ProfileScreen,
+    Artikel: ProfileScreen,
+    Pengaturan: ProfileScreen,
   },
   {
     defaultNavigationOptions: ({ navigation }) => ({
@@ -39,23 +42,33 @@ const TabNavigator = createBottomTabNavigator(
         const { routeName } = navigation.state;
         // let IconComponent = Ionicons;
         let iconName;
+        let typeIcon;
         if (routeName === 'Home') {
           iconName = 'ios-home';
-          // Sometimes we want to add badges to some icons.
-          // You can check the implementation below.
-          // IconComponent = HomeIconWithBadge;
-        } else if (routeName === 'Profile') {
-          iconName = 'ios-contact';
+          typeIcon = 'Ionicons';
+        } else if (routeName === 'Notifikasi') {
+          iconName = 'md-notifications-outline';
+          typeIcon = 'Ionicons'
+        } else if (routeName === 'Penawaran') {
+          iconName = 'local-offer';
+          typeIcon = 'MaterialIcons';
+        } else if (routeName === 'Artikel') {
+          iconName = 'news';
+          typeIcon = 'Entypo';
+        } else if (routeName === 'Pengaturan') {
+          iconName = 'ios-settings';
+          typeIcon = 'Ionicons';
         }
 
         // You can return any component that you like here!
-        return <Icon name={iconName} style={{ color: tintColor }} />;
+        return <Icon name={iconName} type={typeIcon} style={{ color: tintColor }} />;
       },
     }),
     tabBarOptions: {
       activeTintColor: '#142082',
       inactiveTintColor: 'black',
     },
+    initialRouteName: 'Home'
   }
 );
 

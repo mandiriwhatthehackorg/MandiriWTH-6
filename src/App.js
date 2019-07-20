@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Alert, View } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import { Spinner } from 'native-base';
-import { AppContainer, LoginContainer, OnBoardingContainer } from './routes';
+import { AppContainer, LoginContainer } from './routes';
 
 export default class App extends Component {
   constructor(props) {
@@ -20,32 +20,18 @@ export default class App extends Component {
 
   getLogin = async () => {
     try {
-      const valueOnb = await AsyncStorage.getItem('@onboarding');
-      console.log({ valueOnb });
-      if (valueOnb !== null) {
-        this.setState({ onboarding: false });
-        try {
-          const value = await AsyncStorage.getItem('@login')
-          console.log({ value });
-          if (value !== null) {
-            // value previously stored
-            this.setState({ login: true });
-          }
-          this.setState({ loading: false });
-        } catch (e) {
-          console.log(e);
-          Alert.alert(
-            'error',
-            e
-          );
-        }
+      const value = await AsyncStorage.getItem('@login');
+      console.log({ value });
+      if (value !== null) {
+        // value previously stored
+        this.setState({ login: true });
       }
       this.setState({ loading: false });
-    } catch (a) {
-      console.log(a);
+    } catch (e) {
+      console.log(e);
       Alert.alert(
-        'error onb',
-        a
+        'error',
+        e
       );
     }
   }

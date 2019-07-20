@@ -7,24 +7,9 @@ import Swiper from 'react-native-swiper';
 import { LOGIN } from '../assets/icons/';
 
 export class LoginScreen extends Component {
-  componentDidMount() {
-    this.storeDataOnBoarding();
-  }
-
   storeData = async () => {
     try {
-      await AsyncStorage.setItem('@login', true);
-    } catch (e) {
-      Alert.alert(
-        'Error on login',
-        e
-      );
-    }
-  }
-
-  storeDataOnBoarding = async () => {
-    try {
-      await AsyncStorage.setItem('@onboarding', true);
+      await AsyncStorage.setItem('@login', 'true');
     } catch (e) {
       Alert.alert(
         'Error on login',
