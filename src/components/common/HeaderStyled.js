@@ -17,7 +17,7 @@ export class HeaderStyled extends Component {
       >
         <Left style={{ flex: 1 }}>
           <Button transparent onPress={() => this.props.navigation.goBack()}>
-            <Icon name="ios-arrow-back" style={[{ color: '#142082' }, iconStyle]} />
+            <Icon name="ios-arrow-back" style={[{ color: '#0A5C78' }, iconStyle]} />
           </Button>
         </Left>
         <Body style={textContainer}>

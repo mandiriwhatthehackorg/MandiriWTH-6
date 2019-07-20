@@ -4,7 +4,7 @@ import { Button } from 'react-native-paper';
 import AsyncStorage from '@react-native-community/async-storage';
 import { Container, Header } from 'native-base';
 import Swiper from 'react-native-swiper';
-import { LOGIN } from '../assets/icons/';
+import { APPLOGO } from '../assets/icons/';
 
 export class LoginScreen extends Component {
   storeData = async () => {
@@ -37,12 +37,12 @@ export class LoginScreen extends Component {
               autoplay
             >
               <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                <Image source={LOGIN} style={{ width: 100, height: 100, marginVertical: 8 }} />
-                <Text style={[styles.textStyleDesc, { fontSize: 25 }]}> Lorem Ipsum </Text>
-                <Text style={[styles.textStyleDesc, { fontSize: 14 }]}> Lorem Ipsum </Text>
+                <Image source={APPLOGO} style={{ width: 200, height: 110, marginVertical: 8 }} />
+                <Text style={[styles.textStyleDesc, { fontSize: 25 }]}> Dana Terpadu </Text>
+                <Text style={[styles.textStyleDesc, { fontSize: 14 }]}> Membantu Perencanaan Finansial Anda </Text>
               </View>
               <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                <Image source={LOGIN} style={{ width: 100, height: 100, marginVertical: 8 }} />
+                <Image source={APPLOGO} style={{ width: 200, height: 110, marginVertical: 8 }} />
                 <Text style={[styles.textStyleDesc, { fontSize: 25 }]}> Lorem Ipsum </Text>
                 <Text style={[styles.textStyleDesc, { fontSize: 14 }]}> Lorem Ipsum </Text>
               </View>
