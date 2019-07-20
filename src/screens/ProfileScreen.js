@@ -18,7 +18,7 @@ import {
   HeaderStyled,
 } from '../components/common';
 import {
-  DOLLAR_ICON
+  DOLLAR_ICON, PROFILE
 } from '../assets/icons/';
 import AsyncStorage from '@react-native-community/async-storage';
 
@@ -72,6 +72,10 @@ export class ProfileScreen extends Component {
               <ListItem button style={styles.listItem}>
                   <Image style={styles.iconStyle} source={DOLLAR_ICON} />
                   <Text style={{ fontFamily: 'Muli-Regular' }}>Set Goals</Text>
+              </ListItem>
+              <ListItem button style={styles.listItem}>
+                  <Image style={styles.iconStyle} source={PROFILE} />
+                  <Text style={{ fontFamily: 'Muli-Regular' }}>Profil</Text>
               </ListItem>
             </List>
             <Button

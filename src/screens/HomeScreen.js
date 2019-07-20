@@ -17,7 +17,7 @@ import axios from 'axios';
 import { RowStyled, GridButton } from '../components/common/';
 import { INVESTASI, ARUSKAS, ANGGARAN, IKHTISAR, ANALYSIS,
   DIAGRAM, BIOLOGY, OBLIGASI, PASARUANG, OFFER, APPLOGO,
-  SAVEMONEY, GROWTH
+  SAVEMONEY, GROWTH, TAGIHAN
  } from '../assets/icons/';
 
 let { height, width } = Dimensions.get('window');
@@ -318,6 +318,7 @@ export class HomeScreen extends Component {
           <View style={{ flexDirection: 'column', alignSelf: 'flex-start', alignItems: 'flex-start', justifyContent: 'flex-start', marginVertical: 8 }}>
             <Text style={{ color: 'white', fontSize: 18, fontFamily: 'Lato-Bold', marginVertical: 2 }}>Pertumbuhan invest kamu:</Text>
             <Text style={{ color: 'white', fontSize: 18, fontFamily: 'Lato-Bold', marginVertical: 2 }}>+ Rp 50.000</Text>
+            <Text style={{ color: 'white', fontSize: 10, fontFamily: 'Lato-Regular', marginTop: 10 }}> </Text>
           </View>
         </LinearGradient>
         <View
@@ -425,11 +426,12 @@ export class HomeScreen extends Component {
     return (
       <ScrollView contentContainerStyle={styles.containerInsideStyle}>
         <LinearGradient start={{x: 0.0, y: 0.2}} end={{x: 1, y: 0.1}} colors={['#D08BEA', '#FFD860']} style={styles.cardStyle}>
-          <Image source={ANGGARAN} style={{ height: 35, width: 35 }} />
+          <Image source={TAGIHAN} style={{ height: 35, width: 35 }} />
           <Text style={{ color: 'white', fontSize: 11, fontFamily: 'Lato-Bold', marginVertical: 5 }}>TAGIHAN</Text>
           <View style={{ flexDirection: 'column', alignSelf: 'flex-start', alignItems: 'flex-start', justifyContent: 'flex-start', marginVertical: 8 }}>
             <Text style={{ color: 'white', fontSize: 18, fontFamily: 'Lato-Bold', marginVertical: 2 }}>Tagihan Kamu Bulan Ini</Text>
             <Text style={{ color: 'white', fontSize: 18, fontFamily: 'Lato-Bold', marginVertical: 2 }}>Rp 11.000.000</Text>
+            <Text style={{ color: 'white', fontSize: 10, fontFamily: 'Lato-Regular', marginTop: 10 }}> </Text>
           </View>
         </LinearGradient>
         <View

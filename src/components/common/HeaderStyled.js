@@ -12,8 +12,8 @@ export class HeaderStyled extends Component {
       <Header
         transparent
         style={[viewStyle, headerStyle]}
-        androidStatusBarColor={this.props.androidStatusBarColor}
-        iosBarStyle={this.props.iosBarStyle}
+        androidStatusBarColor={'white'}
+        iosBarStyle={'dark-content'}
       >
         <Left style={{ flex: 1 }}>
           <Button transparent onPress={() => this.props.navigation.goBack()}>

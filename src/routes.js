@@ -10,7 +10,8 @@ import {
 import {
   HomeScreen, ProfileScreen, PeopleListScreen, AnimatableScreen,
   APITestScreen, TableScreen, LoginScreen, OnBoardingScreen,
-  SwiperScreen, ArticleListScreen, ArticleScreen, OfferingScreen
+  SwiperScreen, ArticleListScreen, ArticleScreen, OfferingScreen,
+  NotificationScreen
 } from './screens';
 
 const HomeStack = createStackNavigator({
@@ -21,9 +22,7 @@ const HomeStack = createStackNavigator({
   TableScreen,
   Login: LoginScreen,
   SwiperScreen,
-  ArticleScreen,
-  ArticleListScreen,
-  OfferingScreen
+  ArticleScreen
 }, {
   headerMode: 'none',
     navigationOptions: {
@@ -33,7 +32,7 @@ const HomeStack = createStackNavigator({
 
 const TabNavigator = createBottomTabNavigator(
   {
-    Notifikasi: ProfileScreen,
+    Notifikasi: NotificationScreen,
     Penawaran: OfferingScreen,
     Home: HomeStack,
     Artikel: ArticleListScreen,
@@ -47,8 +46,8 @@ const TabNavigator = createBottomTabNavigator(
         let iconName;
         let typeIcon;
         if (routeName === 'Home') {
-          iconName = 'ios-home';
-          typeIcon = 'Ionicons';
+          iconName = 'th-large';
+          typeIcon = 'FontAwesome';
         } else if (routeName === 'Notifikasi') {
           iconName = 'md-notifications-outline';
           typeIcon = 'Ionicons'
