@@ -1,3 +1,16 @@
 export const DAYLIGHT_BACKGROUND_IMG = require('./daylight-mode.png');
 export const NIGHT_BACKGROUND_IMG = require('./night-mode.png');
 export const DEVELOPMENT_IMG = require('./development.png');
+export const ArusKas1 = require('./DetailArusKas1.jpg');
+export const ArusKas2 = require('./DetailArusKas2.jpg');
+export const ArusKas3 = require('./DetailArusKas3.jpg');
+export const Anggaran1= require('./DetailBudgetAnggaran1.jpg');
+export const Anggaran2 = require('./DetailBudgetAnggaran2.jpg');
+export const Impian1 = require('./DetailImpian1.jpg');
+export const Impian2 = require('./DetailImpian2.jpg');
+export const Saham = require('./DetailPasarSaham.jpg');
+export const Portofolio = require('./DetailPortofolio.jpg');
+export const HasilSurvey = require('./Investasi2.jpg');
+export const Tagihan1 = require('./Tagihan.jpg');
+export const Tagihan2 = require('./TambahAkun1.jpg');
+export const Tagihan3 = require('./TambahAkun2.jpg');

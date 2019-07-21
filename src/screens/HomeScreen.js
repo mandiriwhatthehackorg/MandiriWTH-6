@@ -133,7 +133,7 @@ export class HomeScreen extends Component {
               borderRadius={0}
             />
           </View>
-          <Button mode="contained" onPress={() => { console.log('Register'); }} style={[styles.buttonStyle, { backgroundColor: '#56CCF2', marginTop: 15 }]}>
+          <Button mode="contained" onPress={() => { this.props.navigation.navigate('ArusKas1') }} style={[styles.buttonStyle, { backgroundColor: '#56CCF2', marginTop: 15 }]}>
             <Text
               style={{
                 color: 'white',
@@ -205,7 +205,7 @@ export class HomeScreen extends Component {
               borderRadius={0}
             />
           </View>
-          <Button mode="contained" onPress={() => { console.log('Register'); }} style={[styles.buttonStyle, { backgroundColor: '#56CCF2', marginTop: 15, justifyContent: 'center' }]}>
+          <Button mode="contained" onPress={() => { this.props.navigation.navigate('Impian1') }} style={[styles.buttonStyle, { backgroundColor: '#56CCF2', marginTop: 15, justifyContent: 'center' }]}>
             <Text
               style={{
                 color: 'white',
@@ -292,7 +292,7 @@ export class HomeScreen extends Component {
                 borderRadius={0}
               />
             </View>
-          <Button mode="contained" onPress={() => { console.log('Register'); }} style={[styles.buttonStyle, { backgroundColor: '#56CCF2', marginTop: 15 }]}>
+          <Button mode="contained" onPress={() => { this.props.navigation.navigate('DetailAnggaran1'); }} style={[styles.buttonStyle, { backgroundColor: '#56CCF2', marginTop: 15 }]}>
             <Text
               style={{
                 color: 'white',
@@ -312,15 +312,17 @@ export class HomeScreen extends Component {
     }
     return (
       <ScrollView contentContainerStyle={styles.containerInsideStyle}>
-        <LinearGradient start={{x: 0.0, y: 0.2}} end={{x: 1, y: 0.1}} colors={['#AAEA6B', '#27AE60']} style={styles.cardStyle}>
-          <Image source={INVESTASI} style={{ height: 35, width: 35 }} />
-          <Text style={{ color: 'white', fontSize: 11, fontFamily: 'Lato-Bold', marginVertical: 5 }}>INVESTASI</Text>
-          <View style={{ flexDirection: 'column', alignSelf: 'flex-start', alignItems: 'flex-start', justifyContent: 'flex-start', marginVertical: 8 }}>
-            <Text style={{ color: 'white', fontSize: 18, fontFamily: 'Lato-Bold', marginVertical: 2 }}>Pertumbuhan invest kamu:</Text>
-            <Text style={{ color: 'white', fontSize: 18, fontFamily: 'Lato-Bold', marginVertical: 2 }}>+ Rp 50.000</Text>
-            <Text style={{ color: 'white', fontSize: 10, fontFamily: 'Lato-Regular', marginTop: 10 }}> </Text>
-          </View>
-        </LinearGradient>
+        <TouchableOpacity onPress={() => { this.props.navigation.navigate('Portofolio')}}>
+          <LinearGradient start={{x: 0.0, y: 0.2}} end={{x: 1, y: 0.1}} colors={['#AAEA6B', '#27AE60']} style={styles.cardStyle}>
+            <Image source={INVESTASI} style={{ height: 35, width: 35 }} />
+            <Text style={{ color: 'white', fontSize: 11, fontFamily: 'Lato-Bold', marginVertical: 5 }}>INVESTASI</Text>
+            <View style={{ flexDirection: 'column', alignSelf: 'flex-start', alignItems: 'flex-start', justifyContent: 'flex-start', marginVertical: 8 }}>
+              <Text style={{ color: 'white', fontSize: 18, fontFamily: 'Lato-Bold', marginVertical: 2 }}>Pertumbuhan invest kamu:</Text>
+              <Text style={{ color: 'white', fontSize: 18, fontFamily: 'Lato-Bold', marginVertical: 2 }}>+ Rp 50.000</Text>
+              <Text style={{ color: 'white', fontSize: 10, fontFamily: 'Lato-Regular', marginTop: 10 }}> </Text>
+            </View>
+          </LinearGradient>
+        </TouchableOpacity>
         <View
           style={{ marginVertical: 15, borderBottomWidth: 0.8, borderBottomColor: '#E0E0E0', width: '100%', height: 1 }}
         />
@@ -331,7 +333,7 @@ export class HomeScreen extends Component {
           <Text style={{ fontSize: 16, color: '#828282', alignSelf: 'flex-start', textAlign: 'left', fontFamily: 'Lato-Regular' }}>
             Investasi dapat memberikan bunga lebih tinggi dari tabungan biasa.
           </Text>
-          <TouchableOpacity style={{ flexDirection: 'row', borderColor: '#2D9CDB', borderWidth: 2, height: 100, justifyContent: 'center', alignItems: 'center', paddingHorizontal: 30, paddingVertical: 20, marginTop: 10 }}>
+          <TouchableOpacity onPress={() => this.props.navigation.navigate('SurveyScreen')}style={{ flexDirection: 'row', borderColor: '#2D9CDB', borderWidth: 2, height: 100, justifyContent: 'center', alignItems: 'center', paddingHorizontal: 30, paddingVertical: 20, marginTop: 10 }}>
             <View style={{ flex: 1 }}>
               <Image source={ANALYSIS} style={{ width: 41, height: 41 }} />
             </View>
@@ -443,7 +445,7 @@ export class HomeScreen extends Component {
             { this.renderListTagihan() }
           </View>
           <View style={{ flexDirection: 'row' }}>
-            <Button mode="contained" onPress={() => { console.log('Register'); }} style={{ backgroundColor: '#C4C4C4', marginTop: 15, justifyContent: 'center', alignSelf: 'flex-end' }}>
+            <Button mode="contained" onPress={() => { this.props.navigation.navigate('Tagihan1') }} style={{ backgroundColor: '#C4C4C4', marginTop: 15, justifyContent: 'center', alignSelf: 'flex-end' }}>
               <Text
                 style={{
                   color: 'white',
@@ -478,11 +480,11 @@ export class HomeScreen extends Component {
         </Header>
         <Content contentContainerStyle={{ flex: 1, justifyContent: 'center' }}>
           <View style={{ height: swiperHeight }}>
-            <Swiper height={swiperHeight} width={width} dotColor={'#56CCF2'} activeDotColor={'#2F80ED'}>
+            <Swiper height={swiperHeight} width={width} dotColor={'#56CCF2'} activeDotColor={'#2F80ED'} index={2}>
+              {this.renderInvestasi()}
               {this.renderArusKas()}
               {this.renderIkhtisar()}
               {this.renderAnggaran()}
-              {this.renderInvestasi()}
               {this.renderTagihan()}
             </Swiper>
           </View>

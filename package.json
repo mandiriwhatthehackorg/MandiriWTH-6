@@ -23,6 +23,7 @@
     "react-native-onboarding-swiper": "^1.1.0",
     "react-native-paper": "^2.16.0",
     "react-native-progress-bar-animated": "^1.0.6",
+    "react-native-simple-survey": "^1.2.0",
     "react-native-svg": "^9.5.3",
     "react-native-swiper": "^1.5.14",
     "react-native-vector-icons": "^6.6.0",
@@ -41,5 +42,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/"
+    ]
   }
 }

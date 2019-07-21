@@ -11,7 +11,12 @@ import {
   HomeScreen, ProfileScreen, PeopleListScreen, AnimatableScreen,
   APITestScreen, TableScreen, LoginScreen, OnBoardingScreen,
   SwiperScreen, ArticleListScreen, ArticleScreen, OfferingScreen,
-  NotificationScreen
+  NotificationScreen, SurveyScreen, SurveyResult,
+  DetailAnggaran1, DetailAnggaran2,
+  Impian1, Impian2,
+  ArusKas1, ArusKas2, ArusKas3,
+  Tagihan1, Tagihan2, Tagihan3,
+  Portofolio
 } from './screens';
 
 const HomeStack = createStackNavigator({
@@ -22,7 +27,14 @@ const HomeStack = createStackNavigator({
   TableScreen,
   Login: LoginScreen,
   SwiperScreen,
-  ArticleScreen
+  ArticleScreen,
+  SurveyScreen,
+  SurveyResult,
+  DetailAnggaran1, DetailAnggaran2,
+  Impian1, Impian2,
+  ArusKas1, ArusKas2, ArusKas3,
+  Tagihan1, Tagihan2, Tagihan3,
+  Portofolio
 }, {
   headerMode: 'none',
     navigationOptions: {
